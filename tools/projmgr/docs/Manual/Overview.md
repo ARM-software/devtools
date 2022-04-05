@@ -109,6 +109,7 @@ Usage:
 Commands:
   list packs            Print list of installed packs
        devices          Print list of available device names
+       boards           Print list of available board names
        components       Print list of available components
        dependencies     Print list of unresolved project dependencies
        contexts         Print list of contexts in a csolution.yml
