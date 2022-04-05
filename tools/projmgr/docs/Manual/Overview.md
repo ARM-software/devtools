@@ -361,8 +361,8 @@ solution:
       optimize: max
       debug: off
 
-projects:
-  - project: .\MyProject.cproject.yml
+  projects:
+    - project: .\MyProject.cproject.yml
 ```
 
 **File: MyProject.csolution.yml**
