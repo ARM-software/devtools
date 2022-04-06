@@ -18,7 +18,6 @@ The following chapter explains the YML format that is used to describe the YML i
 - [Toolchain Options](#toolchain-options)
   - [`compiler:`](#compiler)
   - [`output-type:`](#output-type)
-  - [`linker:`](#linker)
 - [Translation Control](#translation-control)
   - [`optimize:`](#optimize)
   - [`debug:`](#debug)
@@ -367,7 +366,6 @@ The `project:` node is the start of a `*.cproject.yml` file and can contain the 
 &nbsp;&nbsp; [`compiler:`](#compiler)          |  Optional    | Toolchain selection.
 &nbsp;&nbsp; [`output-type:`](#output-type)    | **Required** | Generate executable (default) or library.
 &nbsp;&nbsp; [`optimize:`](#optimize)          |  Optional    | Optimize level for code generation.
-&nbsp;&nbsp; [`linker:`](#linker)              | **Required** | Instructions for the linker.
 &nbsp;&nbsp; [`debug:`](#debug)                |  Optional    | Generation of debug information.
 &nbsp;&nbsp; [`defines:`](#defines)            |  Optional    | Preprocessor (#define) symbols for code generation.
 &nbsp;&nbsp; [`undefines:`](#undefines)        |  Optional    | Remove preprocessor (#define) symbols.
@@ -470,22 +468,6 @@ Value                                                 | Generated Output
 
 ```yml
 output-type: lib            # Generate a library
-```
-
-## `linker:`
-
-The `linker:` node controls the linker operation.
-
-`linker:`                                             | Content
-:-----------------------------------------------------|:------------------------------------
-&nbsp;&nbsp; `script:`                                | Explicit file name of the linker script
-
-**Example:**
-
-```yml
-linker:                      # Control linker operation
-  - script: .\MyProject.sct  # Explicit scatter file
-    for-type: .Debug  
 ```
 
 # Translation Control
