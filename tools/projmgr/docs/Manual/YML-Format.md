@@ -241,14 +241,14 @@ The example below uses the `build-type` and `target-type` of the current process
 
 ```yml
     files:
-    - file: `$Output(TFM)$`.o                             # use the symbol output file of the TFM Project
+    - file: $Output(TFM)$.o                             # use the symbol output file of the TFM Project
 ```
 
 The example below uses from the TFM project always `build-type: Debug` and the `target-type: Production-HW`.
 
 ```yml
     files:
-    - file: `$Output(TFM.Release+Production-HW)$`.o       # use the symbol output file of the TFM Project
+    - file: $Output(TFM.Release+Production-HW)$.o       # use the symbol output file of the TFM Project
 ```
 
 The example below uses the `build-type: Debug`. The `target-type` of the current processed context is used.
